@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Stichting Al Bina Utrecht</title>
+    <meta name="description" content="Neem contact op met Stichting Al Bina Utrecht via het contactformulier of de contactgegevens." />
+    <link rel="icon" type="image/png" href="assets/favicon-albina.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+<body class="page" data-page="contact">
+<a class="skip-link" href="#main">Direct naar inhoud</a>
+
+<div id="site-header"></div>
+
+<main id="main">
+    <section class="hero">
+        <div class="container hero__inner">
+            <h1>Contact</h1>
+            <p class="hero__lead">
+                Vragen, samenwerking of ondersteuning? Stuur ons gerust een bericht.
+            </p>
+        </div>
+    </section>
+
+    <section class="section section--surface">
+        <div class="container">
+            <h2>Contactgegevens</h2>
+            <div class="grid grid--2" style="margin-top:1rem;">
+                <div class="card">
+                    <h3>E-mail &amp; telefoon</h3>
+                    <p class="text-muted" style="margin:0;">albinautrecht@outlook.com</p>
+                    <p class="text-muted" style="margin:.5rem 0 0 0;">Tel: 0624426734</p>
+
+                </div>
+
+                <div class="card">
+                    <h3>Adres</h3>
+                    <p class="text-muted" style="margin:0;">Steve Bikostraat 411<br />3573 BN Utrecht</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Stuur een bericht</h2>
+            <p class="text-muted">
+                Laat een bericht achter en we nemen zo snel mogelijk contact met je op.
+            </p>
+
+            <form class="form" data-contact-form action="https://formspree.io/f/mkovbbyy" method="POST" style="margin-top:1rem;">
+                <div class="field">
+                    <label for="naam">Naam</label>
+                    <input id="naam" name="name" type="text" autocomplete="name" />
+                </div>
+
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="contact_email" type="text" inputmode="email" autocomplete="email" />
+                </div>
+
+                <div class="field">
+                    <label for="onderwerp">Onderwerp</label>
+                    <input id="onderwerp" name="subject" type="text" />
+                </div>
+
+                <div class="field">
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="message"></textarea>
+                </div>
+
+                <button class="btn btn--primary" type="submit">Verzenden</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<div id="site-footer"></div>
+</body>
+</html>
+
+
+
